@@ -1,0 +1,88 @@
+---
+params:
+  title: "Web 3.0"                
+  subtitle: "Blockchain structure"  
+  date: !r Sys.Date()
+  email: matthew.malishev[at]gmail.com
+  url: "https://www.youtube.com/watch?v=_160oMzblY8"  
+  primary: "#518063"  
+  # end inputs ---------------------------------------------------------------
+header-includes: \usepackage{float}
+always_allow_html: yes
+output: html_document
+
+---
+
+```{r, setup, echo = FALSE, cache = FALSE, include = FALSE}
+options(width=100)
+knitr::opts_chunk$set(
+  eval = F, # run all code
+  echo = T, # show code chunks in output 
+  tidy = T, # make output as tidy
+  message = F,  # mask all messages
+  warning = F, # mask all warnings 
+  comment = "",
+  tidy.opts=list(width.cutoff=100), # set width of code chunks in output
+  size="small" # set code chunk size
+)
+```
+
+<!-- end yaml  -------------------------------------------------- -->
+
+\  
+
+\  
+
+\  
+
+\  
+
+
+# `r paste0(params$id,". ", params$title)`      
+Reference: [](`r params$url`)      
+\  
+
+<!-- ____________________________________________________________________________ -->
+<!-- start body -->  
+
+### Blockchain components  
+* Data  
+* Hash     
+* Nonce
+* Block  
+* Blockchain  
+* Previous  
+* Distributed blockchain  
+* Tokens   
+
+Hash  
+* Digital fingerprint of data    
+* Changes with every new data entry and returns same hash for the same data      
+  
+Nonce  
+* Mined serial number to validate block  
+* Needs to be updated with mining when data in the block is altered  
+
+Block  
+* Contains block ID, nonce, data, and hash   
+* A block is signed when the hash matches the data  
+* Changes to the data break the block, which needs to be mined in order to generate a new nonce, hash out the correct hash number for the data, and revalidate (sign) the block      
+
+Blockchain   
+* Series of blocks linked by previous hashes and hashes        
+* Any change in data within one block (break in block) breaks all further blocks up the chain    
+* Each broken block needs to be re-mined to generate new nonce and validate block along chain   
+
+Distributed blockchain    
+* Blockchains separated into categories (peers)    
+* Each peer contains exact replica of the blockchain    
+* Keeps track of which blocks have been mined and when  
+* Re-mined blocks generate new hashes, which stand out from original shared hash, thus signifying data has been altered and there has been a previous break (and re-mine) in the chain     
+
+Tokens  
+* Transactional data within each block representing transaction amount e.g. Matt pays Mark $50     
+* Doesn't verify (immutability) that Matt has $50 to pay (requires verification platform e.g. Coinbase)  
+
+Coinbase blockchain example    
+* Checks previous block/s to verify each individual has money to complete transaction within the current block   
+* Points to blocks back in time within peer blockchain, which is validated by hash  

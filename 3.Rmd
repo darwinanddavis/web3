@@ -1,0 +1,105 @@
+---
+params:
+  title: "Web 3.0"                
+  subtitle: "DeFi"  
+  date: !r Sys.Date()
+  email: matthew.malishev[at]gmail.com
+  url: ""  
+  primary: "#518063"  
+  # end inputs ---------------------------------------------------------------
+header-includes: \usepackage{float}
+always_allow_html: yes
+output: html_document
+
+---
+
+```{r, setup, echo = FALSE, cache = FALSE, include = FALSE}
+options(width=100)
+knitr::opts_chunk$set(
+  eval = F, # run all code
+  echo = T, # show code chunks in output 
+  tidy = T, # make output as tidy
+  message = F,  # mask all messages
+  warning = F, # mask all warnings 
+  comment = "",
+  tidy.opts=list(width.cutoff=100), # set width of code chunks in output
+  size="small" # set code chunk size
+)
+```
+
+<!-- end yaml  -------------------------------------------------- -->
+
+\  
+
+\  
+
+\  
+
+\  
+
+
+# `r paste0(params$id,". ", params$title)`      
+Reference: [](`r params$url`)      
+\  
+
+<!-- ____________________________________________________________________________ -->
+<!-- start body -->  
+
+## Components  
+* Crytography  
+* Blockchain  
+* Smart contracts  
+
+## Trading crypto  
+
+### Stablecoin  
+Pros:  
+* Trading crypo for stablecoins (defi linked to fiat price) limits the fees and taxes associated with withdrawing and cashing in crypto for cash as it uses the blockchain    
+* No limit on trade volume. Can trade large volumes of money (~$10M) instantly without huge fees (banks limited to $10K)  
+
+### Borrowing and lending  
+
+Lending platforms    
+* AAVE  
+* Compound   
+
+Lending  
+1. Deposit coins into platform  
+2. Convert coins to A or C tokens, plus interest, using smart contract  
+
+Borrowing  
+
+Option 1    
+Take loan out of cryto without selling with the idea it increases in price later      
+1. Borrower overcollaterises loan by adding e.g. 20% on top of loan request amount, which is converted to tokens via smart contract. Collateral is in cryto. This collateral acts as insurance to pay lender in case borrower breaks contract.  
+2. Stake this cryto collateral on trading platform (eg. AAVE) and convert to stablecoin    
+3.Trade this stablecoin, increase volume, and swap back to original crypto to repay loan and keep any profits       
+4. If this crypto price drops and loses value, you can keep the loan in exchange for trading in your crypto  
+
+
+Option 2 - Flash loan  
+Loan active for 10 seconds that allows you to loan and trade large volumes of crypto (~$10M) without fronting cash. Cash out profit and repay loan plus fee. Built with smart contract, so instant trade with small fees.    
+
+Option 3 - Decentralised exchange  
+Trade foreign money for crypto within smart contract for small fees.  
+* Much lower exchange rate fees than fiat (0.5% vs. 15%)  
+* Fees locked in to smart contract so can't be raised like fiat  
+
+**Uniswap**      
+* Etherium network defi trading platform with 100s of cryptocurrencies    
+* Not regulated by govt (decent) so you can trade 100s of coins unlike Coinbase (max 32 coins because regulated by govt)  
+* Locked fees in smart contract (immutable)    
+
+**Pancake swap**    
+* Same as Uniswap but on Bifance smartchain network    
+
+## Insurance    
+* Get smart contract insurance for asset or property based on conditions e.g. farmer insures crop that Insurance claim pays farmer every time temp > 30C.   
+* Money comes from other insurance programs into insurance lender that haven't been paid out and are typically incentivised by good interest rates to investors that earn money by lending money      
+* Conditions are verified by Oracles  
+Oracle = Community verified software that verifies insurance conditions i.e. temp > 30C, which is then used as data source by smart contract to ensure insurance claim conditions are satisfied  
+
+## Margin trading  
+Take out crypto loan on smart contract with smaller fees than bank loans allowing you to trade crypto using margin on prices i.e. get loan of $100 of crypto, pay % fee, sell crypto at higher price and keep profit minus fee. If crypto price drops, you need to sell once the price matches the loan amount minus the fee.     
+
+

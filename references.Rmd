@@ -1,0 +1,63 @@
+---
+params:
+  title: "Web 3.0"                
+  subtitle: ""
+  date: !r Sys.Date()
+  email: matthew.malishev[at]gmail.com
+  url: "https://www.youtube.com/watch?v=hk8ZDqRpURA"  
+  primary: "#518063"  
+  # end inputs ---------------------------------------------------------------
+header-includes: \usepackage{float}
+always_allow_html: yes
+output: html_document
+
+---
+
+```{r, setup, echo = FALSE, cache = FALSE, include = FALSE}
+options(width=100)
+knitr::opts_chunk$set(
+  eval = F, # run all code
+  echo = T, # show code chunks in output 
+  tidy = T, # make output as tidy
+  message = F,  # mask all messages
+  warning = F, # mask all warnings 
+  comment = "",
+  tidy.opts=list(width.cutoff=100), # set width of code chunks in output
+  size="small" # set code chunk size
+)
+```
+
+<!-- end yaml  -------------------------------------------------- -->
+
+\  
+
+\  
+
+\  
+
+\  
+
+
+# `r paste0(params$title)`        
+Reference: [](`r params$url`)      
+\  
+
+<!-- ____________________________________________________________________________ -->
+<!-- start body -->  
+
+[Time well spent]()      
+
+[What is Web 3.0? Web3 Summit 2018](https://www.youtube.com/watch?v=l44z35vabvA)      
+
+[John Perry Barlow - Declaration of Independence of Cyberspace](https://www.eff.org/cyberspace-independence)    
+
+[25 Years of John Barlow’s Declaration of Independence in Cyberspace: When Visions Meet Realities](https://circleid.com/posts/20210206-25-years-of-john-barlows-declaration-of-independence-in-cyberspace/)      
+[Best visual demo of blockchain -- Part I (contains link to live blockchain demo)](https://www.youtube.com/watch?v=_160oMzblY8)  
+
+[Best visual demo of blockchain -- Part 2](https://www.youtube.com/watch?v=xIDL_akeras)  
+
+## DeFi  
+
+[What is DeFi?](https://www.youtube.com/watch?v=17QRFlml4pA)  
+
+
