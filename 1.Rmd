@@ -78,9 +78,13 @@ E.g. ETH/Bitcoin blockchains
 * Permissionless entry  
 * Offer service over time   
 * Optimise value   
-* Can maintain and scale infrastructure autonomously   
+* Can maintain and scale infrastructure autonomously  
+* Bitcoin built on Turing Incomplete language (restricted to bitcoin network)    
+* Ethereum built on Solidity  
   
 ## Ethereum blockchain  
+* Ethereum is built on incentivising ever layer of centralised network, from security to economics to applications    
+* Ethereum = cryptography security x mathematical proof of blockchain layers x economic game theory of transactions        
 
 ### ETH virtual machine    
 * SWARM - file/data storage   
@@ -117,6 +121,10 @@ E.g. ETH/Bitcoin blockchains
 \  
 
 #### dApp -> Decentralised economy (social layer) -> Smart contracts -> Storage and content delivery -> Blockchain      
+
+### DAO    
+* Decentralised Autonomous Organisation  
+* Invest money and make returns based on crowd-sourced and decentralised decisions from DAO      
 
 
 ## Future avenues  

@@ -1,0 +1,87 @@
+---
+params:
+  title: "Web 3.0"                
+  subtitle: "Cryptocurrency mining"        
+  date: !r Sys.Date()
+  email: matthew.malishev[at]gmail.com
+  url: ""  
+  primary: "#518063"  
+  # end inputs ---------------------------------------------------------------
+header-includes: \usepackage{float}
+always_allow_html: yes
+output: html_document
+
+---
+
+```{r, setup, echo = FALSE, cache = FALSE, include = FALSE}
+options(width=100)
+knitr::opts_chunk$set(
+  eval = F, # run all code
+  echo = T, # show code chunks in output 
+  tidy = T, # make output as tidy
+  message = F,  # mask all messages
+  warning = F, # mask all warnings 
+  comment = "",
+  tidy.opts=list(width.cutoff=100), # set width of code chunks in output
+  size="small" # set code chunk size
+)
+```
+
+<!-- end yaml  -------------------------------------------------- -->
+
+\  
+
+\  
+
+\  
+
+\  
+
+
+# `r paste0(params$id,". ", params$title)`      
+Reference: [](`r params$url`)      
+\  
+
+<!-- ____________________________________________________________________________ -->
+<!-- start body -->  
+
+## Bitcoin  
+
+### Mining process   
+* Purpose is to maintain decentralisation of ledger  
+* Reward (bitcoin) for updating the blockchain ledger   
+* Guess hash of each new block  
+* Successful guesser determines which group of pending blockchain transactions will be grouped into block  
+* This block and your solution is sent to blockchain network for validation, then rewrites the next set of bitcoin transactions on blockchain (new hashes)    
+* Each computer on network updates next block with new hash/nonce on ledger        
+* Guesser is rewarded with for solving the latest transaction and math problem with bitcoin plus any transaction fees associated with transactions linked to your newly created block             
+
+### Mining restrictions    
+* Diffulty scales with accumualting mining power of network i.e. gets harder with more mining power/people on network. This permits steady flow of bitcoin to combat inflation   
+* New block is added approx. every 10 min     
+* Hash rate = rate of solving hashes   
+* Reward sum = started with 50 BTC in 2009 and is halved every 210,000 blocks (every 4 years; July 2016, 2020, ... )     
+* Electricity cost    
+* Power consumption  
+* Pool fees for using service  
+* BTC price  
+* Difficulty increase per year  
+  
+
+### Hardware    
+* CPU  
+* GPU - 30-fold more powerful than CPU, useful for gaming and cryptography and so powerful enough for mining    
+* FPGA = hardware specifically for running calculations, 100-fold faster than GPU, difficult to configure so less popular     
+* ASIC (Application Specific Integrated Circuit) = hardcoded mining hardware with no other function but mining       
+
+### Pools  
+* Miners pooling resources to increase mining power  
+* Reward is distributed among pool member based on mining contribution    
+* BTC.com, Slushpool, AntPool, ViaBTC, Bitcoin.com   
+
+### Webmining  
+* Sites that commandeer your comp when you visit to mine crypto  
+* Monetise site for owner without ads  
+* Owner controls how much of your CPU is used for mining   
+
+
