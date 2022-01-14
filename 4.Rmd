@@ -38,7 +38,7 @@ knitr::opts_chunk$set(
 \  
 
 
-# `r paste0(params$id,". ", params$title)`      
+# `r paste0(params$id," ", params$title)`      
 Reference: [](`r params$url`)      
 \  
 

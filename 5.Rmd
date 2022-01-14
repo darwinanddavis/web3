@@ -1,0 +1,48 @@
+---
+params:
+  title: "Web 3.0"                
+  subtitle: "Altcoins"        
+  date: !r Sys.Date()
+  email: matthew.malishev[at]gmail.com
+  url: ""  
+  primary: "#518063"  
+  # end inputs ---------------------------------------------------------------
+header-includes: \usepackage{float}
+always_allow_html: yes
+output: html_document
+
+---
+
+```{r, setup, echo = FALSE, cache = FALSE, include = FALSE}
+options(width=100)
+knitr::opts_chunk$set(
+  eval = F, # run all code
+  echo = T, # show code chunks in output 
+  tidy = T, # make output as tidy
+  message = F,  # mask all messages
+  warning = F, # mask all warnings 
+  comment = "",
+  tidy.opts=list(width.cutoff=100), # set width of code chunks in output
+  size="small" # set code chunk size
+)
+```
+
+<!-- end yaml  -------------------------------------------------- -->
+
+\  
+
+\  
+
+\  
+
+\  
+
+
+# `r paste0(params$id," ", params$title)`      
+Reference: [](`r params$url`)      
+\  
+
+<!-- ____________________________________________________________________________ -->
+<!-- start body -->  
+
+## Tokenomics    
