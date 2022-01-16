@@ -67,3 +67,8 @@ Ethereum Classic = Original ethereum blockchain before DAO fiasco
 
 [Decentralizing Everything with Ethereum's Vitalik Buterin | Disrupt SF 2017](https://www.youtube.com/watch?v=WSN5BaCzsbo)    
 
+## Smart contracts  
+[Blockchain & Smart contracts: Digital Evolution Conference 2018](https://www.youtube.com/watch?v=HNCwbKAY7AM)    
+
+## Network and linking apps  
+[Connecting Metamask and blockchain domains](https://www.youtube.com/watch?v=nGn_9T-t260&t=212s)  

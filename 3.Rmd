@@ -52,12 +52,15 @@ Reference: [](`r params$url`)
 
 ## Trading crypto  
 
-### Stablecoin  
-Pros:  
+### Stablecoin    
 * Trading crypo for stablecoins (defi linked to fiat price) limits the fees and taxes associated with withdrawing and cashing in crypto for cash as it uses the blockchain    
 * No limit on trade volume. Can trade large volumes of money (~$10M) instantly without huge fees (banks limited to $10K)  
+* MakerDAO - platform for defi stablecoins  
 
-### Borrowing and lending  
+
+### Borrowing and lending (automated liqiuidity)   
+* Permissionless, decentralised, borrowing/lending and swapping of cryptocurrencies  
+* Uniswap, Kyber Network, Pancake Swap  
 
 Lending platforms    
 * AAVE  
@@ -101,5 +104,7 @@ Oracle = Community verified software that verifies insurance conditions i.e. tem
 
 ## Margin trading  
 Take out crypto loan on smart contract with smaller fees than bank loans allowing you to trade crypto using margin on prices i.e. get loan of $100 of crypto, pay % fee, sell crypto at higher price and keep profit minus fee. If crypto price drops, you need to sell once the price matches the loan amount minus the fee.     
+
+
 
 

@@ -1,0 +1,96 @@
+---
+params:
+  title: "Web 3.0"                
+  subtitle: "Smart contracts"          
+  date: !r Sys.Date()
+  email: matthew.malishev[at]gmail.com
+  url: ""  
+  primary: "#518063"  
+  # end inputs ---------------------------------------------------------------
+header-includes: \usepackage{float}
+always_allow_html: yes
+output: html_document
+
+---
+
+```{r, setup, echo = FALSE, cache = FALSE, include = FALSE}
+options(width=100)
+knitr::opts_chunk$set(
+  eval = F, # run all code
+  echo = T, # show code chunks in output 
+  tidy = T, # make output as tidy
+  message = F,  # mask all messages
+  warning = F, # mask all warnings 
+  comment = "",
+  tidy.opts=list(width.cutoff=100), # set width of code chunks in output
+  size="small" # set code chunk size
+)
+```
+
+<!-- end yaml  -------------------------------------------------- -->
+
+\  
+
+\  
+
+\  
+
+\  
+
+
+# `r paste0(params$id," ", params$title)`      
+Reference: [](`r params$url`)      
+\  
+
+<!-- ____________________________________________________________________________ -->
+<!-- start body -->  
+
+### Basics  
+* Contract written in code executed automatically and deterministically  
+* Blockchain embedded to make trustless and secure  
+* Use Oracle to develop contract and transfer tamper-proof data from off-chain sources to on-chain SCs e.g. Chainlink on Ethereum  
+* Immutable - cannot be modified  
+* Decentralised - all nodes store the same contract in the same state 
+
+### Uses       
+Payments, supply chain, defi, crowdfunding, Dapps, data sharing (OriginTrail), notary (document verification), tokens           
+
+Supply chain  
+* Trace origin and timestamps of items in supply chain eg fresh produce  
+* Easily and quickly verify changes and risks ie. contamination   
+
+Notary   
+* [Stampd.io](https://stampd.io/)      
+* Authenticate documents/files/data on blockchain  
+* Mint NFT to tokenise digital products    
+* Mint NFT to tokenise  physcal objects using NFC tags (near field communication) ie. Google/Apply Pay  
+
+Multi-signature wallet   
+* Link multiple people to immutable contract eg. release of funds from bank account for company programmed to only release funds if all parties agree  
+
+Tokens  
+* Act as stock/asset for company    
+* Reward tokens in exchange for cryptocurrency   
+* Smart contract manages account balance and token transfer    
+
+Ecommerce (and postage)  
+* Verify/ship product only when SC conditions are satisfied eg. buyer deposits crypto and seller only gets paid after sending product      
+
+### Risks  
+* Software bugs  
+* Protocol changes ie. blockchain upgrades    
+* Lack of empathy ie. hard coded contract lacks human decision element     
+
+### Platforms    
+* Ethereum  
+* Cardano  
+* Tron 
+* EOS  
+
+### Languages  
+Solidity (ETH)  
+
+## Refs  
+[Blockchain & Smart contracts: Digital Evolution Conference 2018](https://www.youtube.com/watch?v=HNCwbKAY7AM)  
+
+

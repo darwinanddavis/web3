@@ -54,35 +54,49 @@ Reference: [](`r params$url`)
 * Previous  
 * Distributed blockchain  
 * Tokens   
+* Consensus algorithm  
+* P2P network  
 
-Hash  
+### Hash  
 * Digital fingerprint of data    
-* Changes with every new data entry and returns same hash for the same data      
+* Changes with every new data mod or entry  
+* Returns same hash for the same data        
   
-Nonce  
+### Nonce  
 * Mined serial number to validate block  
 * Needs to be updated with mining when data in the block is altered  
-
-Block  
+### Block  
 * Contains block ID, nonce, data, and hash   
 * A block is signed when the hash matches the data  
 * Changes to the data break the block, which needs to be mined in order to generate a new nonce, hash out the correct hash number for the data, and revalidate (sign) the block      
 
-Blockchain   
+### Blockchain   
 * Series of blocks linked by previous hashes and hashes        
 * Any change in data within one block (break in block) breaks all further blocks up the chain    
-* Each broken block needs to be re-mined to generate new nonce and validate block along chain   
+* Each broken block needs to be re-mined to generate new nonce and validate block along chain 
 
-Distributed blockchain    
+### Distributed blockchain    
 * Blockchains separated into categories (peers)    
 * Each peer contains exact replica of the blockchain    
 * Keeps track of which blocks have been mined and when  
 * Re-mined blocks generate new hashes, which stand out from original shared hash, thus signifying data has been altered and there has been a previous break (and re-mine) in the chain     
 
-Tokens  
+### Tokens  
 * Transactional data within each block representing transaction amount e.g. Matt pays Mark $50     
 * Doesn't verify (immutability) that Matt has $50 to pay (requires verification platform e.g. Coinbase)  
 
-Coinbase blockchain example    
+#### Coinbase blockchain example    
 * Checks previous block/s to verify each individual has money to complete transaction within the current block   
-* Points to blocks back in time within peer blockchain, which is validated by hash  
+* Points to blocks back in time within peer blockchain, which is validated by hash      
+
+## Security  
+
+### Consensus algorithm    
+Proof of work to solve the crypto hash puzzle means you are always one block behind b/c other nodes in network are adding new blocks every 10 min
+
+### P2P network  
+* Immutability network shared by everyone viewing the blockchain  
+* Every new block is shared to everyone (every node) and each node will verify consensus algorithm     
+
+Data sharing      
+[OriginTrail](https://origintrail.io/) - open-source protocol enabling data sharing between companies and organizations. Uses decentralized nodes and off-chain technology stack to interface with legacy systems and blockchains (permissioned and permissionless).      
